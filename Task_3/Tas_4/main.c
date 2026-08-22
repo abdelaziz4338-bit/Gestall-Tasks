@@ -1,5 +1,4 @@
 #include "MCAL/DIO/DIO_Interface.h"
-#include "HAL/LED/LED_Interface.h"
 #include <util/delay.h>
 
 
