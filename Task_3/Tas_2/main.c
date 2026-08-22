@@ -19,22 +19,12 @@ void main()
 
     while(1)
     {
-//    TIMER0_SetPWMDutyCycle(25);
-//    _delay_ms(15);
-//    TIMER0_SetPWMDutyCycle(50); 
-//     _delay_ms(15);
-//    TIMER0_SetPWMDutyCycle(75);  
-//     _delay_ms(15);
-for (uint8_t brightness = 0; brightness <= 255; brightness += 5)
-        {
-           TIMER0_SetCompare((uint8_t)brightness);
-            _delay_ms(15);
-        }
+   TIMER0_SetPWMDutyCycle(50);
+   _delay_ms(15);
+   TIMER0_SetPWMDutyCycle(75); 
+    _delay_ms(15);
+   TIMER0_SetPWMDutyCycle(100);  
+    _delay_ms(15);
 
-        for (uint8_t brightness = 255; brightness >= 0; brightness -= 5)
-        {
-            TIMER0_SetCompare((uint8_t)brightness);
-            _delay_ms(15);
-        }
     }
 }
